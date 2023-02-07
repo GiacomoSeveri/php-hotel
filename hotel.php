@@ -69,14 +69,14 @@
                 <?php foreach ($hotels as $hotel) { ?>
                     <tr>
                         <td><?php echo $hotel['name']; ?></td>
-                        <td class="fst-italic"><?php echo $hotel['description']; ?></td>
+                        <td class="fst-italic"><?= $hotel['description']; ?></td>
                         <td><?php if ($hotel['parking']) {
                             echo 'Si';
                         } else {
                             echo 'No';
                         }; ?></td>
-                        <td class="text-warning"><?php echo $hotel['vote']; ?></td>
-                        <td><?php echo $hotel['distance_to_center']; ?> km</td>
+                        <td class="text-warning"><?= $hotel['vote']; ?></td>
+                        <td><?= $hotel['distance_to_center']; ?> km</td>
                     </tr>
                 <?php } ?>
             </tbody>
